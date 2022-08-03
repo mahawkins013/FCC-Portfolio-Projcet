@@ -24,7 +24,6 @@
 html {
   background-color: var(--background-color1);
   font-family: Century Gothic;
-  overflow: none;
   box-sizing: border-box;
   scroll-padding-top: 60px;
 }
@@ -117,23 +116,18 @@ html {
 
 
 .projects {
-  border: 3px solid red;
   display: flex;
   flex-direction: row;
   overflow: hidden;
-  flex-flow: row wrap;
-  flex-basis: 50%;
+  flex-wrap: wrap;
   row-gap: 10px;
   margin-top: 50px;
 }
 
 #gallery {
     display: flex;
-    flex-direction: row;
     align-items: top;
-    justify-content: space-evenly; 
-    flex-basis: 50%;
-    row-gap: 10px;
+    justify-content: space-evenly;  
 }
 
 #gallery img {
