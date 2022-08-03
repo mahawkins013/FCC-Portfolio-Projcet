@@ -122,6 +122,8 @@ html {
   flex-wrap: wrap;
   row-gap: 10px;
   margin-top: 50px;
+  border: 3px solid blue;
+  height: auto;
 }
 
 #gallery {
@@ -131,9 +133,10 @@ html {
 }
 
 #gallery img {
-  max-width: 45%;
-  width: 45%;
+  min-width: 50%;
+  max-width: 100%;
   display: flex;
+  flex-wrap: wrap;
 }
 
 #completed-projects h2, #in-progress-projects h2 {
