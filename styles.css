@@ -123,9 +123,6 @@ html {
   font-weight: bold;
 }
 
-
-
-
 .projects {
   display: flex;
   flex-direction: row;
@@ -164,6 +161,7 @@ figure figcaption {
   font-weight: 400;
   display: inline-block;
   margin-bottom: 50px;
+  margin-top: 12px;
 }
 
 figure figcaption:hover {
