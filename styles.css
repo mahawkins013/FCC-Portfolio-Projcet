@@ -1,14 +1,24 @@
 @media only screen and (max-width:420px) {
   nav {
     min-height: 105px;
-    height: 105px;
     width: 100%;
   }
   :root {
     scroll-padding-top: 120px;
     overflow: none;
   }
-  
+}
+@media only screen and (max-width:270px) {
+  nav {
+    min-height: 140px;
+    width: 100%;
+    font-size: 0.8em;
+  }
+  :root {
+    scroll-padding-top: 155px;
+    overflow: none;
+  }
+
 }
 
 :root {
@@ -119,21 +129,22 @@ html {
   display: flex;
   flex-direction: row;
   overflow: hidden;
-  flex-wrap: wrap;
-  margin-top: 50px;
-  box-shadow: 2px 2px 15px gray;
-  height: auto;
 }
 
 #gallery {
     display: flex;
     align-items: top;
     justify-content: space-evenly;  
+    flex-wrap: wrap;
+    height: auto;
+    margin-top: 50px;
+    overflow: hidden;
 }
 
 #gallery img {
-  min-width: 50%;
-  max-width: 100%;
+  min-width: 200px;
+  width: 100%;
+  max-width: 500px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -143,6 +154,8 @@ html {
   font-size: 2em;
   font-weight: normal;
   text-align: left;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 figure figcaption {
@@ -163,6 +176,11 @@ fieldset {
   border: none;
 }
 
+#completed-projects {
+  border-bottom: 2px solid var(--accent-color1);
+
+}
+
 figure #book-review-img {
   width: 60%;
   box-shadow: 3px 3px 20px green;
@@ -175,3 +193,23 @@ figure #book-review-img {
   text-align: center;
   font-size: 1.5em !important;
 }
+
+footer {
+  height: 80px;
+  width: 100%;
+  background-color: var(--background-color3);
+  color: var(--accent-color4);
+  font-size: 1.3em;
+  opacity: 0.9;
+}
+
+footer a {
+  color: var(--accent-color4);
+  text-decoration: none;
+}
+
+footer a:hover {
+ color: #F1E5EC;
+  background-color: #6B0F0F;
+}
+
