@@ -1,0 +1,181 @@
+@media only screen and (max-width:420px) {
+  nav {
+    min-height: 105px;
+    height: 105px;
+    width: 100%;
+  }
+  :root {
+    scroll-padding-top: 120px;
+    overflow: none;
+  }
+  
+}
+
+:root {
+  --background-color1: #15141B;
+  --background-color2: #F9F4F7;
+  --background-color3: #470A0A;
+  --accent-color1: #470A0A;
+  --accent-color2: #C99450;
+  --accent-color3: #878B91;
+  --accent-color4: #F9F4F7;
+}
+
+html {
+  background-color: var(--background-color1);
+  font-family: Century Gothic;
+  overflow: none;
+  box-sizing: border-box;
+  scroll-padding-top: 60px;
+}
+
+#navbar {
+  width: 100%;
+  height: 55px;
+  background-color: var(--background-color3);
+  text-align: right;
+  position: sticky;
+  position: --webkit-sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 0.9;
+}
+
+#navbar > a {
+  color: var(--accent-color4);
+  padding-right: 12px;
+  font-size: 1.3em;
+  text-decoration: none;
+}
+
+#navbar > a:hover {
+  color: #F1E5EC;
+  background-color: #6B0F0F;
+  font-weight: normal;
+}
+
+#welcome-section {
+  height: calc(100% - 55px);
+  background-color: var(background-color1);
+  box-shadow: 2px 2px 15px gray;
+}
+
+#welcome-section > h1, h2{
+  color: var(--accent-color2);
+  text-align: center;
+}
+
+#welcome-section > h1 {
+  padding-top: 17%;
+  text-align: center;
+  font-size: 2.3em;
+  font-weight: normal;
+  color: var(--accent-color4);
+}
+
+#welcome-section > h2 {
+  padding-bottom: 30px;
+  color: var(--accent-color2);
+  font-weight: normal;
+}
+
+#welcome-section > h3 {
+  color: var(--accent-color2);
+}
+
+#self-taught {
+  color: var(--accent-color4);
+}
+
+#self-taught:hover {
+  color: var(--accent-color2);
+}
+
+#html-css {
+  font-size: 1.4em;
+  text-align: center;
+  color: var(--accent-color4);
+}
+
+#and-sign {
+  color: var(--accent-color2);
+  font-weight: bold;
+}
+
+#html:hover {
+  color: var(--accent-color2);
+  font-weight: bold;
+}
+
+#css:hover {
+  color: var(--accent-color2);
+  font-weight: bold;
+}
+
+
+
+
+.projects {
+  border: 3px solid red;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  flex-flow: row wrap;
+  flex-basis: 50%;
+  row-gap: 10px;
+  margin-top: 50px;
+}
+
+#gallery {
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: space-evenly; 
+    flex-basis: 50%;
+    row-gap: 10px;
+}
+
+#gallery img {
+  max-width: 45%;
+  width: 45%;
+  display: flex;
+}
+
+#completed-projects h2, #in-progress-projects h2 {
+  color: var(--accent-color2);
+  font-size: 2em;
+  font-weight: normal;
+  text-align: left;
+}
+
+figure figcaption {
+  color: var(--accent-color4);
+  font-size: 1.25em;
+  font-weight: 400;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+figure figcaption:hover {
+  color: var(--background-color1);
+  background-color: var(--accent-color4);
+  border-radius: 3px;
+}
+
+fieldset {
+  border: none;
+}
+
+figure #book-review-img {
+  width: 70%;
+  border: 7px outset var(--accent-color3);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#book-review-blog {
+  text-align: center;
+  font-size: 1.5em !important;
+}
